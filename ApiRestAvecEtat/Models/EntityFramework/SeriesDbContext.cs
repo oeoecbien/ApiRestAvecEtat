@@ -17,8 +17,8 @@ public partial class SeriesDbContext : DbContext
 
     public virtual DbSet<Serie> Series { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseNpgsql("Server=localhost;port=5433;Database=SeriesDB; uid=postgres; password=postgres;");
+    //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    //    => optionsBuilder.UseNpgsql("Server=localhost;port=5433;Database=SeriesDB; uid=postgres; password=postgres;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
